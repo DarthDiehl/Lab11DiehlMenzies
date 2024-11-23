@@ -18,6 +18,14 @@ public class Person implements Comparable<Person>{
 		
 	}
 	
+	public Person(int age, String firstName, String lastName, int zipCode, double salary) {
+		setAge(age);
+		setFirstName(firstName);
+		setLastName(lastName);
+		setZipCode(zipCode);
+		setSalary(salary);
+	}
+	
 	@Override
 	public String toString() {
 		return String.format("%d %s %s %d $%,.2f%n", age, firstName, lastName, zipCode, salary);
