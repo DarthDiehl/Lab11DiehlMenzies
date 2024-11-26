@@ -1,3 +1,5 @@
+import java.io.Serializable;
+
 /**
  * File: Lab11Prob01
  * Class: CSCI 1302
@@ -7,7 +9,7 @@
  * Description: 
  */
  
-public class Person implements Comparable<Person>{
+public class Person implements Comparable<Person>, Serializable{
 	private int age;
 	private String firstName;
 	private String lastName;
